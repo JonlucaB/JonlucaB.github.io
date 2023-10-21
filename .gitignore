@@ -1,0 +1,8 @@
+.DS*
+*jpg~
+*png~
+*gif~
+.kra
+*bmp
+.snarf
+bin/

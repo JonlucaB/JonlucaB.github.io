@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- LinkedIn -->
+  <meta property="og:title" content="Jonluca Biagini" />
+  <meta property="og:url" content="https://www.linkedin.com/in/jonlucab/" />
+  <meta property="og:image" />
+  <meta property="og:site_name" content="LinkedIn" />
+  <!-- Redirect -->
+  <meta http-equiv = "refresh" content = "0; url=site/home.html" />
+  <link rel='stylesheet' type='text/css' href='links/main.css'>
+  <title>Jonluca Biagini</title>
+</head> 
+<body>
+  <noscript>Continue to <a href='site/home.html'>site</a>.</noscript>
+  <script>
+    'use strict'
+    
+    const filename = toFilename(window.location.hash || 'home')
+
+    window.location.replace(`./site/${filename}.html`)
+
+    function toFilename(str) {
+      return `${str}`.replace('#','').replace(/[\W_]+/g,"_").toLowerCase().trim()
+    }
+  </script>
+</body>
+</html>
