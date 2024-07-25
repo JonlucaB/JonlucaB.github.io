@@ -1,1 +1,30 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/github.io/app/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/github.io/app/logo192.png"/><link rel="manifest" href="/github.io/app/manifest.json"/><title>React App</title><script defer="defer" src="/github.io/app/static/js/main.add8148e.js"></script><link href="/github.io/app/static/css/main.f855e6bc.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- LinkedIn -->
+  <meta property="og:title" content="Jonluca Biagini" />
+  <meta property="og:url" content="https://www.linkedin.com/in/jonlucab/" />
+  <meta property="og:image" />
+  <meta property="og:site_name" content="LinkedIn" />
+  <!-- Redirect -->
+  <meta http-equiv = "refresh" content = "0; url=site/home.html" />
+  <link rel='stylesheet' type='text/css' href='links/main.css'>
+  <title>Jonluca Biagini</title>
+</head> 
+<body>
+  <noscript>Continue to <a href='site/home.html'>site</a>.</noscript>
+  <script>
+    'use strict'
+    
+    const filename = toFilename(window.location.hash || 'home')
+
+    window.location.replace(`./site/${filename}.html`)
+
+    function toFilename(str) {
+      return `${str}`.replace('#','').replace(/[\W_]+/g,"_").toLowerCase().trim()
+    }
+  </script>
+</body>
+</html>
