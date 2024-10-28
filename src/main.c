@@ -185,7 +185,7 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 	fputs("<body>", f);
 	/* header */
 	fputs("<header>", f);
-	fputs("<a href='home.html'><img src='../media/global/homelogo.svg' alt='" NAME "' height='50'></a>", f);
+	fputs("<a href='home.html'><img src='../media/global/homelogo.svg' alt='" NAME "' height='50'></a><div></div><h1>Jonluca Biagini</h1>", f);
 	fputs("</header>", f);
 	/* nav */
 	fputs("<nav>", f);
